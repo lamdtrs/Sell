@@ -1,0 +1,17 @@
+RewriteEngine On
+
+RewriteRule ^tin-tuc-xem/([0-9]*)/				?act=tin_tuc_xem&id=$1
+RewriteRule ^tin-tuc/							?act=tin_tuc
+
+RewriteRule ^cong-trinh/						?act=cong_trinh
+
+RewriteRule ^san-pham-xem/([0-9]*)/				?act=san_pham_xem&id=$1
+RewriteRule ^san-pham/([0-9]*)/([0-9]*)/		?act=san_pham&cmid=$1&page=$2
+RewriteRule ^san-pham/([0-9]*)/					?act=san_pham&cmid=$1
+
+# phần cơ bản
+RewriteRule ^home/								?act=home
+RewriteRule ^gioi-thieu/						?act=gioi_thieu
+RewriteRule ^dich-vu/							?act=dich_vu
+RewriteRule ^tuyen-dung/						?act=tuyen_dung
+RewriteRule ^lien-he/							?act=lien_he
